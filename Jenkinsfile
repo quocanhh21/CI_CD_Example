@@ -2,22 +2,9 @@
     agent any
 
     stages {
-        stage('Build') {
+        stage('Clone') {
             steps {
-                echo 'Building...'
-                // Add your build commands here
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing...'
-                // Add your test commands here
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying...'
-                // Add your deploy commands here
+                git 'https://github.com/quocanhh21/CI_CD_Example.git'
             }
         }
     }
