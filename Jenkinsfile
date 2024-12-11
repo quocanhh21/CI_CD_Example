@@ -2,9 +2,9 @@
     agent any
 
     stages {
-        stage('Clone') {
+        stage('Example') {
             steps {
-                git 'https://github.com/quocanhh21/CI_CD_Example.git'
+                echo 'Hello, Jenkins!'
             }
         }
     }
